@@ -19,7 +19,7 @@ errors = require('./core/server/errors');
 parentApp = express();
 
 parentApp.get('/post/:old_slug', function(req, res){
-  res.redirect("/"+req.params.old_slug);
+  res.redirect("/" + req.params.old_slug);
 })
 
 
