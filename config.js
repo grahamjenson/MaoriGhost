@@ -9,7 +9,7 @@ var path = require('path'),
 config = {
     // Production Description for Heroku
     production: {
-        url: 'http://my-ghost-blog.com',
+        url: process.env.BLOG_URL,
         mail: {},
         database: {
             client: 'postgres',
